@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Problem 2. HTML Form</title>
+</head>
+<body>
+<form method="get">
+		<label for="naInput">Member Name:</label>
+		<input id="naInput" 
+			type="name" 
+			required="true" 
+			placeholder="Duy Ho"/>
+		<label><b>*rep</b></label>
+		<br/>
+		<label for="emailInput">Email:</label>
+		<input id="emailInput" 
+			type="email" 
+			required="true" 
+			pattern="[a-zA-Z0-9_]{3,}@[a-zA-Z0-9_]{3,}.[a-zA-Z0-9_]{2,4}"
+			placeholder="sample@email.com"/>
+		<label><b>*rep</b></label>
+		<br/>
+		<label for="textInput">School:</label>
+		<input  id="textInput"
+			type="text" 
+			required="true" 
+			placeholder="EIU"/>
+		<label><b>*rep</b></label>
+		<br/>	
+		<input type="submit" value="submit"/>
+</form>
+</body>
+</html>

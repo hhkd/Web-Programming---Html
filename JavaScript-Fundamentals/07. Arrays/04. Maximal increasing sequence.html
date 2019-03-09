@@ -1,0 +1,22 @@
+<html>
+
+<body>
+    <script>
+        var count = 0;
+        var numbers = [8, 7, 3, 2, 3, 4, 2, 2, 4]
+        function maximalincreasingsequence(count) {
+            for (i = 0; i < numbers.length; i+=2) {
+                if (Math.pow(numbers[i] - numbers[i + 1],2) == 1) {
+                    count = count + 1;
+                }
+            }
+            console.log(count)
+            
+        }
+        maximalincreasingsequence(count)
+
+       
+    </script>
+</body>
+
+</html>

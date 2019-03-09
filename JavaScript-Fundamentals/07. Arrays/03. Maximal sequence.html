@@ -1,0 +1,26 @@
+<html>
+
+<body>
+    <script>
+        var count = 0 , max = 0;
+        var numbers = [10, 2, 1, 1, 2, 3, 3, 2, 2, 2, 1];
+        function Maximalsequence(max) {
+            for (i = 0; i < numbers.length - 1; i++) {
+                if (numbers[i] == numbers[i + 1]) {
+                    count = count + 1;
+                } else
+                    count = 0
+                if (count > max) {
+                    max = count;
+                } 
+            }
+            console.log(max + 1)
+            
+        }
+            Maximalsequence(max)
+
+       
+    </script>
+</body>
+
+</html>
